@@ -15,7 +15,7 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 # Copiar requirements.txt
-COPY requirements.txt ./
+COPY requirements.txt .
 
 # Instalar dependencias de Python
 RUN pip install --no-cache-dir -r requirements.txt
